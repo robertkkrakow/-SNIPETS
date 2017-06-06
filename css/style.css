@@ -1,11 +1,8 @@
 .main-list{
-    width: 7vh;
+    width: 90vh;
     display: inline-block;
 }
-.main-list:nth-child(2){
-    width: 90vh;
- 
-}
+
 
 ul {
   list-style-type: none;
