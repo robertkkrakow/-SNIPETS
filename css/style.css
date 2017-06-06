@@ -1,39 +1,41 @@
-a {
-  position: relative;
-  color: #fff;
+.main-list{
+    width: 7vh;
+    display: inline-block;
+}
+.main-list:nth-child(2){
+    width: 90vh;
+ 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #1A2427;
+}
+ 
+li:last-child {
+  border: none;
+}
+ 
+li a {
   text-decoration: none;
+  color: #1A2427;
+  display: block;
+    padding-left: 5px;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
 }
-
-a:hover {
-  color: #fff;
-}
-
-a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.list-item{
-    display: block;
-    height: 3em;
-    background: red;
-    margin-top: 1em;
-    top: 50%;
-    transform: translateY(-50%);
+ 
+li a:hover {
+  font-size: 30px;
+  background: #79878B;
+    cursor: pointer;
 }
